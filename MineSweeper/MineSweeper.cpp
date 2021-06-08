@@ -24,8 +24,13 @@ bool isMine(int row, int col, char board[][MAXSIDE])
     else return false;
 }
 
-/* movement of the input on the board
-*/
+//QoL screeninput
+void makeMove(int* x, int* y)
+{
+    printf("Enter your move, (row, column) -> ");
+    scanf("%d %d", x, y);
+    return;
+}
 
 /*
 void showBoard(char myBoard[][MAXSIDE])
@@ -116,6 +121,15 @@ int coutNearbyMines(int row, int col, int mines[][2], char realBoard[][MAXSIDE])
             count++;
     }
     return count;
+}
+
+bool 
+{
+    int i,j;
+    if (realBoard[row][col]=='*')
+    {   
+        myBoard[row][col]='*';
+
 }
 
 int main()
